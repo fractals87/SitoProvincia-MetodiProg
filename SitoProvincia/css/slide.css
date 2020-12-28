@@ -1,0 +1,58 @@
+			.showSlide {
+				display: none
+			}
+			.showSlide img {
+				width: 100%;
+			}
+			.conteiner-slide{
+				overflow:hidden;
+				position:relative;
+			}
+
+			.left, .right {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 10%;
+				cursor: pointer;
+			}
+			.right {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			.left:hover, .right:hover {
+				background-color: rgba(115, 115, 115, 0.8);
+			}
+			.content {
+				color: #eff5d4;
+				font-size: 30px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 60px;
+				width: 100%;
+				text-align: center;
+			}
+			/* Fading animation */
+			.MyFade {
+				-webkit-animation-name: MyFade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: MyFade;
+				animation-duration: 1.5s;
+			}
+			@-webkit-keyframes MyFade {
+				from {
+					opacity: .4
+				}
+				to {
+					opacity: 1
+				}
+			}
+
+			@keyframes MyFade {
+				from {
+					opacity: .4
+				}
+				to {
+					opacity: 1
+				}
+			}
